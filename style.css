@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: #000;
+}
+
+header a {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+header img {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header a:nth-child(2) {
+    border-left: 2px solid grey;
+    border-right: 2px solid grey;
+}
+
+header a:nth-child(3) {
+    border-right: 2px solid grey;
+}
+
+main {
+    max-width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+}
+
+main .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 25px;
+    background-color: #000;
+}
+
+main .wrapper .item {
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+main .wrapper .item .info {
+    border-bottom: 1px solid #000;
+}
+
+main .wrapper .item .info h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+main .wrapper .item .info h4 {
+    color: grey;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+main .wrapper .item .info h1:nth-child(3) {
+    margin-bottom: 30px;
+}
+
+main .wrapper .item .categories {
+    height: 400px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .wrapper .item .categories .categ_info p {
+    color: grey;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+main .wrapper .item .categories .send {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    background: linear-gradient(45deg, rgb(50, 106, 211), blue);
+    transition: 300ms linear all;
+}
+
+main .wrapper .item .categories .active {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, red, purple);
+}
+
+/* main .wrapper .item .categories .unactive {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, red, purple);
+} */
